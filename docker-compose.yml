@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  ssh-tunnel-docker:
+    container_name: ssh-tunnel-docker
+    image: tekan/ssh-tunnel
+    environment:
+      - REMOTE=/var/run/docker.sock
+    expose:
+      - 2323
+    restart: unless-stopped
+    volumes:
+      - ./ssh:/config:rw

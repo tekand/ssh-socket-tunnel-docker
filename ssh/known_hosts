@@ -1,0 +1,2 @@
+post the output of the following here
+ssh-keyscan -H SSH_HOST

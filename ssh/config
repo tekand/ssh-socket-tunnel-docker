@@ -1,0 +1,9 @@
+Host remote-ssh-host-to-connect-to
+    User root
+    HostName SSH_HOST
+    Port 22
+    IdentityFile ~/.ssh/ssh_key
+    TCPKeepAlive yes
+    ConnectTimeout 5
+    ServerAliveCountMax 10
+    ServerAliveInterval 15
